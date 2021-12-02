@@ -1,15 +1,15 @@
 import { getTextFileLines } from "../utils/getInput";
 
-export const part1 = (dirName: string, inputFile: string): string => {
+export const part1 = (dirName: string, inputFile: string): number => {
   const input = getTextFileLines(dirName, inputFile, "number");
 
-  return "NOT DONE";
+  return 0;
 };
 
-export const part2 = (dirName: string, inputFile: string): string => {
+export const part2 = (dirName: string, inputFile: string): number => {
   const input = getTextFileLines(dirName, inputFile, "number");
 
-  return "NOT DONE";
+  return 0;
 };
 
 export const run = () => {
