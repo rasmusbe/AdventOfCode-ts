@@ -27,3 +27,27 @@ export function getTextFileLines(
 
 export const getTextFile = (dir: string, filename: string) =>
   readFileSync(resolve(dir, filename)).toString();
+
+export function getTextFileMap(
+  dir: string,
+  filename: string,
+  separator: string
+): string[][];
+export function getTextFileMap(
+  dir: string,
+  filename: string,
+  separator: string,
+  format: "number"
+): number[][];
+export function getTextFileMap(
+  dir: string,
+  filename: string,
+  separator = "",
+  format?: "number"
+) {
+  return getTextFileLines(dir, filename).map((line) =>
+    line
+      .split(separator)
+      .map((char) => (format === "number" ? parseInt(char, 10) : char))
+  );
+}
