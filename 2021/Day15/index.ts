@@ -1,4 +1,4 @@
-import { getTextFileLines, getTextFileMap } from "../utils/getInput";
+import { getTextFileMap } from "../utils/getInput";
 
 type Path = {
   x: number;
