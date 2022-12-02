@@ -1,4 +1,4 @@
-import { part1, part2 } from ".";
+import { part1, part2 } from "./improved";
 
 test("test day", () => {
   const answer = part1(__dirname, "example.txt");
