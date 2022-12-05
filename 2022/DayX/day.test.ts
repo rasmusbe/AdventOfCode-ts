@@ -1,15 +1,19 @@
 import { part1, part2 } from ".";
 
 test("test day", () => {
-  const answer = part1(__dirname, "example.txt");
-  expect(answer).toBe(0);
+  const testAnswer = part1(__dirname, "example.txt");
+  expect(testAnswer).toBe(0);
 
   // Only when successful
-  console.log(`Part 1: ${part1(__dirname, "input.txt")}`);
+  const realAnswer = part1(__dirname, "input.txt");
+  expect(realAnswer).not.toBe(0);
+  console.log(`Part 1: ${realAnswer}`);
 
-  const answer2 = part2(__dirname, "example.txt");
-  expect(answer2).toBe(0);
+  const testAnswer2 = part2(__dirname, "example.txt");
+  expect(testAnswer2).toBe(0);
 
   // Only when successful
-  console.log(`Part 2: ${part2(__dirname, "input.txt")}`);
+  const realAnswer2 = part2(__dirname, "input.txt");
+  expect(realAnswer2).not.toBe(0);
+  console.log(`Part 2: ${realAnswer2}`);
 });
